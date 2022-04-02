@@ -1,5 +1,10 @@
 package com.xiaoyu.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -9,6 +14,10 @@ import java.util.Date;
  * @author makejava
  * @since 2022-04-02 13:28:54
  */
+@Data //get和set都全部生成了
+@AllArgsConstructor //生成所有的构造函数
+@NoArgsConstructor //生成所有午餐构造
+@ToString //生成toString
 public class User implements Serializable {
     private static final long serialVersionUID = -49538079868272160L;
     /**
@@ -65,109 +74,7 @@ public class User implements Serializable {
     private Date updateTime;
 
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPortrait() {
-        return portrait;
-    }
-
-    public void setPortrait(String portrait) {
-        this.portrait = portrait;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getRegIp() {
-        return regIp;
-    }
-
-    public void setRegIp(String regIp) {
-        this.regIp = regIp;
-    }
-
-    public String getAccountNonExpired() {
-        return accountNonExpired;
-    }
-
-    public void setAccountNonExpired(String accountNonExpired) {
-        this.accountNonExpired = accountNonExpired;
-    }
-
-    public String getCredentialsNonExpired() {
-        return credentialsNonExpired;
-    }
-
-    public void setCredentialsNonExpired(String credentialsNonExpired) {
-        this.credentialsNonExpired = credentialsNonExpired;
-    }
-
-    public String getAccountNonLocked() {
-        return accountNonLocked;
-    }
-
-    public void setAccountNonLocked(String accountNonLocked) {
-        this.accountNonLocked = accountNonLocked;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getIsDel() {
-        return isDel;
-    }
-
-    public void setIsDel(String isDel) {
-        this.isDel = isDel;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
 
 }
 
