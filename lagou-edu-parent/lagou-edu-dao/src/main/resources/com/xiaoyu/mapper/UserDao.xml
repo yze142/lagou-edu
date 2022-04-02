@@ -18,8 +18,12 @@
         <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
+<!--登录-->
+<select id="login" resultMap="UserMap" >
+   select * from user where phone= #{phone} and password= #{password}
 
 
+</select>
 
 
 
