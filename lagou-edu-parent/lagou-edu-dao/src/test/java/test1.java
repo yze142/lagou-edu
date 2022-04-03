@@ -1,5 +1,5 @@
-import com.xiaoyu.entity.User;
-import com.xiaoyu.mapper.UserDao;
+import com.lagou.entity.User;
+import com.lagou.mapper.UserDao;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

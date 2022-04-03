@@ -1,14 +1,12 @@
 
-import com.xiaoyu.entity.User;
-import com.xiaoyu.mapper.UserDao;
+import com.lagou.entity.User;
+import com.lagou.mapper.UserDao;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import javax.swing.*;
 
 /**
  * @BelongsProject: lagou-edu
@@ -23,23 +21,24 @@ public class TestUser {
 
     @Autowired
     private UserDao userDao;
+
     
     @Test
     public void login(){
-        User user = userDao.login("110", "123");
-        System.out.println("user = " + user);
+//        User user = userDao.login("110", "123");
+//        System.out.println("user = " + user);
     }
 
 
     @Test
     public void checkPhone(){
 //        Integer i = userDao.checkPhone("1101");
-//        System.out.println("i = " + i); //0：未注册 ， 1：已注册
+//       System.out.println("i = " + i); //0：未注册 ， 1：已注册
     }
 
     @Test
     public void register(){
-//        Integer i = userDao.register("114", "123");
+//         Integer i = userDao.register("114", "123");
 //        System.out.println("i = " + i); //0：注册失败 ， 1：注册成功
     }
 

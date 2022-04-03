@@ -1,2 +1,2 @@
-com\xiaoyu\service\UserService.class
-com\xiaoyu\service\impl\UserServiceImpl.class
+com\lagou\user\impl\UserServiceImpl.class
+com\lagou\user\UserService.class

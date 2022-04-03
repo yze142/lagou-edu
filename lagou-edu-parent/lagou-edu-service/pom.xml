@@ -12,9 +12,10 @@
     <artifactId>lagou-edu-service</artifactId>
 
     <properties>
-        <maven.compiler.source>12</maven.compiler.source>
-        <maven.compiler.target>12</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
+        <packaging>war</packaging>
 
     <dependencies>
         <!--dependency>
@@ -22,7 +23,11 @@
             <artifactId>lagou-edu-entity</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>-->
-
+        <dependency>
+            <groupId>com.lagou</groupId>
+            <artifactId>lagou-edu-entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
 
 
@@ -35,6 +40,28 @@
 
     </dependencies>
 
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <port>8001</port>
+                    <path>/</path>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!-- 打包完成后,运行服务 -->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

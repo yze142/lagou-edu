@@ -11,7 +11,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
     <!--1.扫描包-->
-    <context:component-scan base-package="com.xiaoyu.mapper"/>
+    <context:component-scan base-package="com.lagou.mapper"/>
     <!--2.数据连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="url" value="jdbc:mysql://192.168.58.133:3306/edu?serverTimezone=GMT&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
@@ -34,6 +34,6 @@
     <tx:annotation-driven/>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.xiaoyu.mapper"/>
+        <property name="basePackage" value="com.lagou.mapper"/>
     </bean>
 </beans>
