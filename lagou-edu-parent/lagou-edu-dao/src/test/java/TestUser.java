@@ -1,5 +1,7 @@
 
+import com.lagou.entity.Course;
 import com.lagou.entity.User;
+import com.lagou.mapper.CourseDao;
 import com.lagou.mapper.UserDao;
 
 import org.junit.Test;
@@ -7,6 +9,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.util.List;
 
 /**
  * @BelongsProject: lagou-edu
@@ -21,6 +25,9 @@ public class TestUser {
 
     @Autowired
     private UserDao userDao;
+
+    @Autowired
+    private CourseDao courseDao;
 
     
     @Test
@@ -42,4 +49,31 @@ public class TestUser {
 //        System.out.println("i = " + i); //0：注册失败 ， 1：注册成功
     }
 
+
+    @Test
+    public void getAllCourse(){
+
+        List<Course> allCourse = courseDao.getAllCourse();
+        System.out.println(allCourse);
+
+
+    }
+
+
+    @Test
+    public void getCourseByUserId(){
+
+        List<Course> allCourse = courseDao.getCourseByUserId("100030018");
+        System.out.println(allCourse);
+
+
+    }
+    @Test
+    public void getCourseById(){
+
+        List<Course> allCourse = courseDao.getCourseById(7);
+        System.out.println(allCourse);
+
+
+    }
 }

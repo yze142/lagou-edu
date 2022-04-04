@@ -1,1 +1,4 @@
+com\lagou\entity\CourseCommentFavoriteRecord.class
 com\lagou\entity\UserDTO.class
+com\lagou\entity\ActivityCourse.class
+com\lagou\entity\CourseComment.class
