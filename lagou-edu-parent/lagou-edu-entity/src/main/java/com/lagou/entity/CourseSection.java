@@ -18,7 +18,7 @@ import java.util.List;
 
 public class CourseSection implements Serializable {
 
-    public List<CourseLesson> courseLessons; // 一章对应多个小节
+    private List<CourseLesson> courseLessons; // 一章对应多个小节
 
     private static final long serialVersionUID = -27927452337172294L;
     /**

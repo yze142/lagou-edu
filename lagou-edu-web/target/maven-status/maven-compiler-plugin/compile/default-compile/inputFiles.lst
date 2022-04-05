@@ -1,5 +1,9 @@
 G:\idea\lagou-edu-web\src\main\java\com\lagou\course\CourseService.java
 G:\idea\lagou-edu-web\src\main\java\com\lagou\user\controller\UserController.java
+G:\idea\lagou-edu-web\src\main\java\com\lagou\comment\CourseCommentService.java
+G:\idea\lagou-edu-web\src\main\java\com\lagou\order\OrderService.java
 G:\idea\lagou-edu-web\src\main\java\com\lagou\user\UserService.java
+G:\idea\lagou-edu-web\src\main\java\com\lagou\order\controller\OrderController.java
+G:\idea\lagou-edu-web\src\main\java\com\lagou\comment\controller\CourseCommentController.java
 G:\idea\lagou-edu-web\src\main\java\com\lagou\course\controller\CourseController.java
 G:\idea\lagou-edu-web\src\main\java\com\lagou\user\controller\UserController2.java

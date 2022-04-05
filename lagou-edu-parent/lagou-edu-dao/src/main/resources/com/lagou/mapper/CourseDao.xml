@@ -129,7 +129,7 @@
     <!--根据用户查询已经订购的课程-->
     <select id="getCourseByUserId" resultMap="CourseMap">
    <include refid="courseInfo"/>
-where c.id in( select course_id from user_course_order where status = 20 and user_id = #{userId} )
+where c.id in( select course_id from user_course_order where status = 20 and is_del = 0 and user_id = #{userId} )
     order by amount desc , c_id , ac_create_time desc
 
     </select>

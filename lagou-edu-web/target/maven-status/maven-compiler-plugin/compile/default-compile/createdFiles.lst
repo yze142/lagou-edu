@@ -1,3 +1,7 @@
-com\lagou\course\controller\CourseController.class
+com\lagou\comment\CourseCommentService.class
 com\lagou\user\controller\UserController2.class
 com\lagou\course\CourseService.class
+com\lagou\order\controller\OrderController.class
+com\lagou\course\controller\CourseController.class
+com\lagou\order\OrderService.class
+com\lagou\comment\controller\CourseCommentController.class

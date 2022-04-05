@@ -1,4 +1,8 @@
-com\lagou\user\impl\UserServiceImpl.class
+com\lagou\order\impl\OrderServiceImpl.class
+com\lagou\comment\impl\CourseCommentSericeImpl.class
+com\lagou\comment\CourseCommentService.class
 com\lagou\course\impl\CourseServiceImpl.class
 com\lagou\user\UserService.class
 com\lagou\course\CourseService.class
+com\lagou\order\OrderService.class
+com\lagou\user\impl\UserServiceImpl.class
