@@ -1,0 +1,7 @@
+controller\ProdoctAcion.class
+models\Product.class
+service\impl\ProdoctServiceImpl.class
+service\ProdoctService.class
+mapper\ProducMapper.class
+mapper\OrderMapper.class
+models\Order.class

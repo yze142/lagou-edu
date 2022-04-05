@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lagou-dubbo-service" />
+        <module name="lagou-dubbo-domain" />
+        <module name="lagou-dubbo-web" />
+        <module name="lagou-dubbo-dao" />
+        <module name="lagou-dubbo-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lagou-dubbo-dao" target="12" />
+      <module name="lagou-dubbo-domain" target="12" />
+      <module name="lagou-dubbo-entity" target="12" />
+      <module name="lagou-dubbo-interface" target="12" />
+      <module name="lagou-dubbo-service" target="12" />
+      <module name="lagou-dubbo-web" target="12" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

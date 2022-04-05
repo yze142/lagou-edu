@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--配置连接工厂-->
+    <rabbit:connection-factory
+            id="connectionFactory"
+            host="192.168.58.133"
+            port="5672" username="xiaoyu"
+            password="123456"/>
+    <!--配置队列-->
+  <rabbit:queue name="test_spring_queue_1"/>
+    <!--配置rabbitAdmin:用于java代码中对队列的管理，用来创建，绑定，删除队列与交换机发送消息等-->
+    <rabbit:admin connection-factory="connectionFactory"></rabbit:admin>
+
+   <!--扫描注解-->
+<context:component-scan base-package="listener" />
+    <!--配置监听 第一个引用就是对象工厂 第一个参数是一次处理几条 -->
+    <rabbit:listener-container connection-factory="connectionFactory" prefetch="3" acknowledge="manual">
+        <!--第一个参数就是监听类，第二个参数就是需要监听的队列-->
+        <rabbit:listener ref="consumer" queue-names="test_spring_queue_1"/>
+
+    </rabbit:listener-container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
