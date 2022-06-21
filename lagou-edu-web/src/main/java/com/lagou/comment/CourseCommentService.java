@@ -22,6 +22,21 @@ public interface CourseCommentService {
      */
     public List<CourseComment> getCourseCommentList(Integer courseid, Integer pageIndex, Integer pageSize);
 
+    /**
+     * 点赞
+     * @param comment_id 留言编号
+     * @param userid 用户编号
+     * @return 0：保存失败，1：保存成功
+     */
+    Integer saveFavorite(Integer comment_id,Integer userid);
+
+    /**
+     * 取消赞
+     * @param comment_id 留言编号
+     * @param userid 用户编号
+     * @return 0：保存失败，1：保存成功
+     */
+    Integer cancelFavorite(Integer comment_id,Integer userid);
 
 
 }

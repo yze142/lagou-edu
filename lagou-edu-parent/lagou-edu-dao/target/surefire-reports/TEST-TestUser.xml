@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="TestUser" time="0.483" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="TestUser" time="0.471" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.1.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -30,7 +30,7 @@
     <property name="maven.ext.class.path" value="F:\java jvm\IntelliJ IDEA 2021.2.3\IntelliJ IDEA 2021.1.3\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="F:\java jvm\IntelliJ IDEA 2021.2.3\IntelliJ IDEA 2021.1.3\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="F:\java jvm\jmv 12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\java jvm\jmv 12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;F:\微信web开发者工具\dll;C:\Pro;ram Files\python;C:\Program Files\python\Scripts;F:\BtSoft\panel\script;C:\Program Files\python;C:\Program Files\python\Scripts;D:\BtSoft\panel\script;E:\Git\cmd;D:\;C:\Users\Administrator\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python39\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;F:\Python\PyCharm Community Edition 2021.2\bin;;F:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\Pandoc\;F:\mysql-5.7.24-winx64\bin;F:\apache-maven-3.6.1\bin;C:\Users\Administrator\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="F:\java jvm\jmv 12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\java jvm\jmv 12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;F:\微信web开发者工具\dll;C:\Pro;ram Files\python;C:\Program Files\python\Scripts;F:\BtSoft\panel\script;C:\Program Files\python;C:\Program Files\python\Scripts;D:\BtSoft\panel\script;E:\Git\cmd;F:\Develop\nodejs\;C:\Users\Administrator\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python39\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;F:\Python\PyCharm Community Edition 2021.2\bin;;F:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\Pandoc\;F:\mysql-5.7.24-winx64\bin;F:\apache-maven-3.6.1\bin;C:\Users\Administrator\AppData\Roaming\npm;."/>
     <property name="maven.conf" value="F:\java jvm\IntelliJ IDEA 2021.2.3\IntelliJ IDEA 2021.1.3\plugins\maven\lib\maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="56.0"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="F:\java jvm\IntelliJ IDEA 2021.2.3\IntelliJ IDEA 2021.1.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;F:\java jvm\IntelliJ IDEA 2021.2.3\IntelliJ IDEA 2021.1.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="12"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 package"/>
     <property name="java.home" value="F:\java jvm\jmv 12"/>
     <property name="user.language" value="zh"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -62,12 +62,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestUser" name="getCourseById" time="0.005"/>
-  <testcase classname="TestUser" name="saveOrde" time="0.473"/>
-  <testcase classname="TestUser" name="getAllCourse" time="0.001"/>
-  <testcase classname="TestUser" name="register" time="0.001"/>
-  <testcase classname="TestUser" name="updateOrder" time="0.002"/>
+  <testcase classname="TestUser" name="getCourseById" time="0.014"/>
+  <testcase classname="TestUser" name="saveOrde" time="0.456"/>
+  <testcase classname="TestUser" name="getAllCourse" time="0"/>
+  <testcase classname="TestUser" name="register" time="0"/>
+  <testcase classname="TestUser" name="updateOrder" time="0.001"/>
   <testcase classname="TestUser" name="checkPhone" time="0"/>
   <testcase classname="TestUser" name="login" time="0"/>
-  <testcase classname="TestUser" name="getCourseByUserId" time="0.001"/>
+  <testcase classname="TestUser" name="getCourseByUserId" time="0"/>
 </testsuite>
